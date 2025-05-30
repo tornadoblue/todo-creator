@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react'; // Keep useState
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { TodoItem } from '@/interfaces/TodoItem';

@@ -1,7 +1,7 @@
 import { MadeWithDyad } from "@/components/made-with-dyad";
 import { TodoCreator } from "@/components/TodoCreator";
 import { TodoItem } from "@/interfaces/TodoItem";
-import React, { useState } from "react";
+import { useState } from "react"; // Keep useState as it's used directly
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Index = () => {
