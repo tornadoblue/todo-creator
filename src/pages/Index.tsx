@@ -1,5 +1,6 @@
 import { MadeWithDyad } from "@/components/made-with-dyad";
-import { TodoListManager, TodoItem } from "@tornadoblue/TodoCreator"; // Using the package name
+// Use a relative path to import from the library's source entry point
+import { TodoListManager, type TodoItem } from ".."; // This should resolve to src/index.ts
 import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button"; // For custom renderer example
