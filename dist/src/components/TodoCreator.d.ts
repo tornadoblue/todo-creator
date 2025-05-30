@@ -1,4 +1,3 @@
-import { default as React } from 'react';
 import { TodoItem } from '../interfaces/TodoItem';
 
 interface TodoCreatorProps {
