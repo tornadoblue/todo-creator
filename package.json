@@ -1,7 +1,7 @@
 {
   "name": "@tornadoblue/TodoCreator",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "main": "./dist/todo-creator.cjs.js",
   "module": "./dist/todo-creator.es.js",
