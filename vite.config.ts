@@ -12,25 +12,19 @@ export default defineConfig(() => ({
     react(),
     dts({
       insertTypesEntry: true,
-      // Optionally, specify the tsconfig file if it's not in the default location
-      // tsConfigFilePath: './tsconfig.json' 
     }),
   ],
   build: {
-    sourcemap: true, // Optional: generate sourcemaps for easier debugging in consuming projects
+    sourcemap: true,
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'MyTodoLibrary', // A UMD global name, if needed by consumers
-      formats: ['es', 'cjs'], // Output formats: ES Module and CommonJS
-      fileName: (format) => `my-todo-library.${format}.js`,
+      name: 'TornadoblueTodoCreator', // UMD global name
+      formats: ['es', 'cjs'],
+      fileName: (format) => `todo-creator.${format}.js`, // Output filenames
     },
     rollupOptions: {
-      // Externalize dependencies that should not be bundled into your library
-      // These are expected to be provided by the consuming application
       external: ['react', 'react-dom', 'lucide-react'],
       output: {
-        // Provide global variables to use in the UMD build
-        // for externalized deps
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
